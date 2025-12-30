@@ -2,7 +2,8 @@
 import React from 'react';
 import Header from './components/Header';
 import InfoSection from './components/InfoSection';
-import { SectionData } from './types';
+import MetricChart from './components/MetricChart';
+import { SectionData, MetricData } from './types';
 
 const App: React.FC = () => {
   const sections: SectionData[] = [
@@ -25,16 +26,13 @@ const App: React.FC = () => {
         "https://images.unsplash.com/photo-1512428559083-a4369020473a?auto=format&fit=crop&q=80&w=800",
         "https://images.unsplash.com/photo-1454165833767-0266b196773f?auto=format&fit=crop&q=80&w=800"
       ]
-    },
-    {
-      id: 'smart',
-      title: "언제 어디서나\n스마트한 보장 분석",
-      description: "데이터 기반의 분석 엔진이 24시간 대기하며 고객님께 가장 필요한 보장 내역을 추천합니다.",
-      subDescription: "복잡한 약관 설명 대신, 직관적인 그래프와 요약된 정보를 통해 내 보험의 가치를 바로 이해할 수 있습니다.",
-      images: [
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800"
-      ]
     }
+  ];
+
+  const performanceData: MetricData[] = [
+    { name: '기존 시스템', value: 45 },
+    { name: '고도화 1차', value: 72 },
+    { name: '고도화 완료', value: 98 },
   ];
 
   return (
@@ -63,6 +61,13 @@ const App: React.FC = () => {
         {sections.map((section) => (
           <InfoSection key={section.id} {...section} />
         ))}
+        
+        {/* Performance Chart Section */}
+        <section className="py-24 max-w-7xl mx-auto px-6">
+          <div className="reveal">
+             <MetricChart data={performanceData} title="사용자 편의성 지수 측정 (UX Index)" />
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
