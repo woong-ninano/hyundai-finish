@@ -1,5 +1,4 @@
 
-// Interface for project sections in the UI
 export interface SectionData {
   id: string;
   title: string;
@@ -8,7 +7,7 @@ export interface SectionData {
   images: string[];
 }
 
-// Added missing MetricData interface for components/MetricChart.tsx
+// Data structure for metrics and charts used in the project report
 export interface MetricData {
   name: string;
   value: number;

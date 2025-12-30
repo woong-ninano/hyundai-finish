@@ -10,7 +10,7 @@ const App: React.FC = () => {
       id: 'uxui',
       title: "편리함 넘어 더 새롭고\n쾌적한 보험 경험",
       description: "복잡한 보험 가입 단계를 직관적으로 재구성하여, 누구나 쉽고 빠르게 가입할 수 있는 환경을 구축했습니다.",
-      subDescription: "단순한 화면 개편을 넘어 사용자의 행동 패턴을 분석하여 최적화된 동선을 제공합니다. 이제 클릭 몇 번으로 나에게 맞는 보험을 확인하세요.",
+      subDescription: "사용자의 행동 패턴을 분석하여 최적화된 동선을 제공하며, 클릭 몇 번으로 나에게 맞는 보험을 바로 확인할 수 있습니다.",
       images: [
         "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800",
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
@@ -23,15 +23,14 @@ const App: React.FC = () => {
       subDescription: "관심 상품 비교부터 가입 현황까지, 파편화된 정보를 한곳에 모아 관리할 수 있는 개인화 폴더 기능을 도입했습니다.",
       images: [
         "https://images.unsplash.com/photo-1512428559083-a4369020473a?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1454165833767-0266b196773f?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
+        "https://images.unsplash.com/photo-1454165833767-0266b196773f?auto=format&fit=crop&q=80&w=800"
       ]
     },
     {
       id: 'smart',
-      title: "실시간 상담과\n스마트한 보장 분석",
-      description: "AI 기반의 챗봇이 24시간 대기하며 궁금한 보험 용어나 가입 조건을 설명해 드립니다.",
-      subDescription: "보낸 메시지를 수정하거나 삭제하는 것처럼, 내 보장 분석 결과를 실시간으로 조정하며 시뮬레이션해 볼 수 있습니다.",
+      title: "언제 어디서나\n스마트한 보장 분석",
+      description: "데이터 기반의 분석 엔진이 24시간 대기하며 고객님께 가장 필요한 보장 내역을 추천합니다.",
+      subDescription: "복잡한 약관 설명 대신, 직관적인 그래프와 요약된 정보를 통해 내 보험의 가치를 바로 이해할 수 있습니다.",
       images: [
         "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800"
       ]
@@ -60,15 +59,21 @@ const App: React.FC = () => {
       </section>
 
       {/* Main Content Sections */}
-      <main id="uiux" className="bg-white">
+      <main className="bg-white">
         {sections.map((section) => (
           <InfoSection key={section.id} {...section} />
         ))}
       </main>
 
-      {/* Simplified Footer */}
-      <footer className="bg-white py-12 border-t border-gray-100">
+      {/* Footer */}
+      <footer className="bg-white py-16 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
+          <div className="flex justify-center items-center gap-2 mb-4 opacity-50">
+            <div className="w-6 h-6 bg-[#004a99] rounded-full flex items-center justify-center">
+               <div className="w-3 h-3 bg-white rounded-sm rotate-45"></div>
+            </div>
+            <span className="font-bold text-gray-900">현대해상</span>
+          </div>
           <p className="text-xs text-gray-400">© 2024 Hyundai Marine & Fire Insurance Direct. All rights reserved.</p>
         </div>
       </footer>
