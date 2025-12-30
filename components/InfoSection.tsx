@@ -46,7 +46,7 @@ const InfoSection: React.FC<SectionData> = ({ title, description, subDescription
         <div className="space-y-4">
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-normal whitespace-pre-line">
             {description}
-            {subDescription && `\n\n${subDescription}`}
+            {subDescription && ` ${subDescription}`}
           </p>
         </div>
       </div>
