@@ -13,19 +13,30 @@ const App: React.FC = () => {
         title: "편리함 넘어 더 새롭고\n쾌적한 보험 경험",
         description: "복잡한 보험 가입 단계를 직관적으로 재구성하여, 누구나 쉽고 빠르게 가입할 수 있는 환경을 구축했습니다.",
         subDescription: "사용자의 행동 패턴을 분석하여 최적화된 동선을 제공하며, 클릭 몇 번으로 나에게 맞는 보험을 바로 확인할 수 있습니다.",
-        image: "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800"
+        images: [
+          "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1512428559083-a4369020473a?auto=format&fit=crop&q=80&w=800"
+        ]
       },
       {
         title: "관심 상품을 한눈에,\n나만의 보험 대시보드",
         description: "여러 개의 보험 상품을 카테고리별로 분류하여 복잡한 보장 내용을 명확하게 정리해 드립니다.",
         subDescription: "관심 상품 비교부터 가입 현황까지, 파편화된 정보를 한곳에 모아 관리할 수 있는 개인화 폴더 기능을 도입했습니다.",
-        image: "https://images.unsplash.com/photo-1512428559083-a4369020473a?auto=format&fit=crop&q=80&w=800"
+        images: [
+          "https://images.unsplash.com/photo-1454165833767-0266b196773f?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&q=80&w=800"
+        ]
       },
       {
         title: "24시간 중단 없는\n스마트한 고객 응대",
         description: "AI 챗봇과 직관적인 FAQ를 통해 고객이 필요할 때 즉각적인 도움을 받을 수 있는 지능형 서포트 시스템을 구축했습니다.",
         subDescription: "상담 대기 시간 없이 즉시 해결하는 디지털 고객 센터가 365일 고객님의 안전을 지원합니다.",
-        image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800"
+        images: [
+          "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
+        ]
       }
     ]
   };
@@ -58,7 +69,6 @@ const App: React.FC = () => {
             <svg className="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 14l-7 7-7-7m14-8l-7 7-7-7" /></svg>
           </div>
         </div>
-        {/* Background Decorative Element */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border-[1px] border-gray-50 rounded-full -z-0"></div>
       </section>
 

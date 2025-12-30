@@ -3,7 +3,7 @@ export interface ContentItem {
   title: string;
   description: string;
   subDescription?: string;
-  image: string;
+  images: string[];
 }
 
 export interface SectionData {
