@@ -1,13 +1,16 @@
 
-export interface SectionData {
-  id: string;
+export interface ContentItem {
   title: string;
   description: string;
   subDescription?: string;
-  images: string[];
+  image: string;
 }
 
-// Data structure for metrics and charts used in the project report
+export interface SectionData {
+  id: string;
+  items: ContentItem[];
+}
+
 export interface MetricData {
   name: string;
   value: number;
