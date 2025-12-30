@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { SectionData } from '../types';
 
@@ -131,13 +130,13 @@ const InfoSection: React.FC<SectionData> = ({ items }) => {
 
         {/* Right side: Device Frame with Draggable Image */}
         <div className="flex-1 w-full md:w-[40%] order-1 md:order-2 flex flex-col items-center justify-center py-10">
-          <div className="relative w-full max-w-[260px] md:max-w-[310px] aspect-[9/19] bg-white rounded-[3rem] p-2 shadow-[0_40px_100px_rgba(0,0,0,0.15)] border-[8px] border-gray-100 overflow-hidden">
-            {/* Speaker/Notch */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-900 rounded-b-2xl z-30"></div>
+          {/* Device Border changed to black */}
+          <div className="relative w-full max-w-[260px] md:max-w-[310px] aspect-[9/19] bg-white rounded-[3rem] p-2 shadow-[0_40px_100px_rgba(0,0,0,0.2)] border-[8px] border-black overflow-hidden">
+            {/* Speaker/Notch - matching black theme */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-30"></div>
             
             {/* Screen Content Container (Scrollable by Drag) */}
             <div 
-              // Fix: Ensured the ref callback returns void to avoid TypeScript errors in React 19+.
               ref={(el) => { scrollContainerRefs.current[activeItemIndex] = el; }}
               onMouseDown={onMouseDown}
               onMouseLeave={onMouseLeave}
