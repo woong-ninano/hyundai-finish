@@ -85,20 +85,7 @@ const App: React.FC = () => {
       <main className="bg-white">
         <InfoSection {...mainSection} />
         
-        {/* Performance Chart Section */}
-        <section className="py-40 bg-gray-50 border-t border-gray-100">
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="text-center mb-16">
-               <h3 className="text-4xl font-bold text-gray-900 mb-6">프로젝트 성과 지표</h3>
-               <p className="text-lg text-gray-500 leading-relaxed">
-                 정량적인 데이터가 증명하는 디지털 혁신의 결과입니다.<br />
-                 모든 지표에서 목표치를 상회하는 압도적인 성능을 구현했습니다.
-               </p>
-            </div>
-            <MetricChart data={performanceData} title="UX & 시스템 성능 종합 평가지수" />
-          </div>
-        </section>
-      </main>
+
 
       {/* Footer */}
       <footer className="bg-white py-24 border-t border-gray-100">
@@ -110,8 +97,8 @@ const App: React.FC = () => {
             <span className="font-bold text-2xl text-gray-900 tracking-tight">현대해상</span>
           </div>
           <p className="text-gray-500 max-w-lg mx-auto leading-relaxed mb-12">
-            본 웹 리포트는 현대해상 다이렉트 고도화 구축 프로젝트의<br />
-            성공적인 완료와 향후 운영 방향을 보고하기 위해 제작되었습니다.
+            현대해상 다이렉트 보험 플랫폼 고도화 구축<br />
+            프로젝트 주요 개선 사항에 대한 완료 보고
           </p>
           <div className="flex justify-center gap-8 text-sm font-medium text-gray-400">
             <span>Project Director: Hong Gil-dong</span>
