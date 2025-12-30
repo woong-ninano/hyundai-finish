@@ -55,7 +55,8 @@ const App: React.FC = () => {
     { name: '최종 결과물', value: 98 },
   ];
 
-  const footerLogoUrl = "https://raw.githubusercontent.com/woong-ninano/hyundai-finish/refs/heads/main/img_logo_ty1.png";
+  // GitHub Raw 이미지 URL로 변환하여 적용
+  const footerLogoUrl = "https://raw.githubusercontent.com/woong-ninano/hyundai-finish/main/images/img_logo_ty1.png";
 
   return (
     <div className="min-h-screen bg-white">

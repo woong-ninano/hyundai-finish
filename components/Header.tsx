@@ -11,8 +11,8 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 사용자 제공 현대해상 다이렉트 로고 이미지 URL
-  const logoUrl = "https://github.com/woong-ninano/hyundai-finish/blob/main/images/img_logo_ty1.png";
+  // GitHub Raw 이미지 URL로 변환하여 적용
+  const logoUrl = "https://raw.githubusercontent.com/woong-ninano/hyundai-finish/main/images/img_logo_ty1.png";
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
