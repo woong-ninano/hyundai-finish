@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import InfoSection from './components/InfoSection';
-import MetricChart from './components/MetricChart';
-import { SectionData, MetricData } from './types';
+import { SectionData } from './types';
 
 const App: React.FC = () => {
   const mainSection: SectionData = {
@@ -48,15 +47,8 @@ const App: React.FC = () => {
     ]
   };
 
-  const performanceData: MetricData[] = [
-    { name: '기존 시스템', value: 45 },
-    { name: 'UX 고도화', value: 78 },
-    { name: '기술 고도화', value: 92 },
-    { name: '최종 결과물', value: 98 },
-  ];
-
-  // 로컬 images 폴더의 로고 경로
-  const footerLogoUrl = "./images/img_logo_ty1.png";
+  // 제공해주신 새로운 로고 이미지 URL 적용
+  const footerLogoUrl = "https://raw.githubusercontent.com/woong-ninano/hyundai-finish/refs/heads/main/images/img_logo_ty1.png";
 
   return (
     <div className="min-h-screen bg-white">
@@ -87,13 +79,6 @@ const App: React.FC = () => {
       <main className="bg-white">
         <InfoSection {...mainSection} />
       </main>
-
-      {/* Metrics Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <MetricChart data={performanceData} title="시스템 고도화 지표 변화" />
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-white py-24 border-t border-gray-100">
